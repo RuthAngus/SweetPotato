@@ -93,14 +93,37 @@ def plot_det_eff_2d(grids, comp, label):
                                   comp_mop, "$R_p \, [R_\oplus]$", label)
 
 
-def plot_marginal_completeness_1d(x_grid, marg_comp, xlabel, ylabel)
+def plot_marginal_completeness_1d(x_grid, marg_comp, xlabel, ylabel, name):
     """
     Make a 1d histogram of the completeness as a function of x.
     """
+    print(np.shape(x_grid), np.shape(marg_comp))
     pl.step(x_grid, marg_comp)
     pl.xlabel("{}".format(xlabel))
     pl.ylabel(ylabel);
+    pl.savefig("{}".format(name))
     pl.show()
+
+
+def plot_det_eff_nd(grid, comp, var_names):
+    """
+    Plot the 1d histogram of the detection efficiency over n dimensions.
+    """
+
+    # Marginalise completeness over all the axes.
+    marginalised_completeness = []
+    ndim = len(np.shape(comp))
+    for d in range(ndim):
+        dlist.remove(d)
+        marginalised_completeness.append(np.sum(comp, axis=tuple(dlist)))
+
+        # Plot all combinations
+        # inds = [0 for _ in range(ndim)]
+        # inds[d] = slice(None)
+        # print(inds)
+        plot_marginal_completeness_1d(grid[d], marginalised_completeness[d],
+                                      var_names[d], "Completeness",
+                                      "test_{}".format(d))
 
 
 def plot_det_eff_1d(grids, comp, var_names):
