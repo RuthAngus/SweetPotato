@@ -11,6 +11,13 @@ Steps:
 4. Does the cut on parallax signal to noise bias you somehow?
 5.
 
+Gijs Mulders' Metallicity -- Occurrence rate plot looks like this -->
+
+![alt text](https://raw.githubusercontent.com/ruthangus/SweetPotato/blob/master/Mulders.png)
+
+So cutting on a Metallicity of -.1 to +.1 should remove most of this trend.
+
+
 Code:
 =====
 
