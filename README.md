@@ -34,5 +34,4 @@ histograms. No longer used.
 
 teff_bv.py: converts teff to b-v and vice versa. Not currently used.
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `exopops/action_occurrence.ipynb: Exoplanet occurrence rate as a function of
-vertical action.`
+<font color="green"> exopops/action_occurrence.ipynb: Exoplanet occurrence rate as a function of vertical action. </font>
