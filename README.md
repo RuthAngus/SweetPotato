@@ -7,9 +7,9 @@ Steps:
 
 1. Check what the influence of metallicity is on planet occurrence rate.
 2. Is there a trend between vertical action and temperature?
+    -- yes, so we need to plot occurrence rate as a function of this too.
 3. Is there a trend between vertical action and any other stellar parameter?
 4. Does the cut on parallax signal to noise bias you somehow?
-5.
 
 Gijs Mulders' Metallicity -- Occurrence rate plot looks like this -->
 
@@ -20,7 +20,6 @@ So cutting on a Metallicity of -.1 to +.1 should remove most of this trend.
 
 Code:
 =====
-
 
 teff_occurrence_rate.ipynb: An implementation of planet occurrence rate as a
 function of temperature.
@@ -35,5 +34,5 @@ histograms. No longer used.
 
 teff_bv.py: converts teff to b-v and vice versa. Not currently used.
 
-exopops/action_occurrence.ipynb: Exoplanet occurrence rate as a function of
-vertical action.
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `exopops/action_occurrence.ipynb: Exoplanet occurrence rate as a function of
+vertical action.`
