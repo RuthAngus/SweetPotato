@@ -5,11 +5,21 @@ Inferring trends in exoplanet populations over time.
 Steps:
 =======
 
-1. Check what the influence of metallicity is on planet occurrence rate.
-2. Is there a trend between vertical action and temperature?
-    -- yes, so we need to plot occurrence rate as a function of this too.
+1. [x] Check what the influence of metallicity is on planet occurrence rate.
+    -- (see figure below.)
+2. [x] Is there a trend between vertical action and temperature?
+    -- [x] yes, so we need to plot occurrence rate as a function of this too.
+    -- [x] looks like only the hot stars show this effect, is that because they
+       have a broader range of vertical actions? There just maybe are not
+       enough cool stars.
 3. Is there a trend between vertical action and any other stellar parameter?
 4. Does the cut on parallax signal to noise bias you somehow?
+5. Is it ok to use vertical actions and not vertical action dispersion.
+6. Does binarity influence this?
+7. Flags epsi and sepsi - astrometric excess noise and astrometric excess
+   noise significance.
+8. Triple check the Gaia data - are there some systematic effects that might
+   be influencing this.
 
 Gijs Mulders' Metallicity -- Occurrence rate plot looks like this -->
 
@@ -34,4 +44,6 @@ histograms. No longer used.
 
 teff_bv.py: converts teff to b-v and vice versa. Not currently used.
 
-<font color="green"> exopops/action_occurrence.ipynb: Exoplanet occurrence rate as a function of vertical action. </font>
+exopops/action_occurrence.ipynb: Exoplanet occurrence rate as a function of vertical action.
+
+code/Checking_actions.ipynb: comparing my actions with Adrian's.
